@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Experimental.Quic" Version="5.0.0-rc.1.20420.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <KnownFrameworkReference Update="Microsoft.NETCore.App">
+      <LatestRuntimeFrameworkVersion>5.0.0-rc.1.20416.7</LatestRuntimeFrameworkVersion>
+      <DefaultRuntimeFrameworkVersion>5.0.0-rc.1.20416.7</DefaultRuntimeFrameworkVersion>
+      <TargetingPackVersion>5.0.0-rc.1.20416.7</TargetingPackVersion>
+    </KnownFrameworkReference>
+    <KnownFrameworkReference Update="Microsoft.AspNetCore.App">
+      <LatestRuntimeFrameworkVersion>5.0.0-rc.1.20420.4</LatestRuntimeFrameworkVersion>
+      <DefaultRuntimeFrameworkVersion>5.0.0-rc.1.20420.4</DefaultRuntimeFrameworkVersion>
+      <TargetingPackVersion>5.0.0-rc.1.20420.4</TargetingPackVersion>
+    </KnownFrameworkReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="msquic.dll" Condition="Exists('msquic.dll')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

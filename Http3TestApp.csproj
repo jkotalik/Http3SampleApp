@@ -9,11 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-     <KnownFrameworkReference Update="Microsoft.NETCore.App">
+     <!-- <KnownFrameworkReference Update="Microsoft.NETCore.App">
       <LatestRuntimeFrameworkVersion>5.0.0-rc.1.20416.7</LatestRuntimeFrameworkVersion>
       <DefaultRuntimeFrameworkVersion>5.0.0-rc.1.20416.7</DefaultRuntimeFrameworkVersion>
       <TargetingPackVersion>5.0.0-rc.1.20416.7</TargetingPackVersion>
-    </KnownFrameworkReference>
+    </KnownFrameworkReference> -->
     <KnownFrameworkReference Update="Microsoft.AspNetCore.App">
       <LatestRuntimeFrameworkVersion>5.0.0-rc.1.20420.4</LatestRuntimeFrameworkVersion>
       <DefaultRuntimeFrameworkVersion>5.0.0-rc.1.20420.4</DefaultRuntimeFrameworkVersion>
